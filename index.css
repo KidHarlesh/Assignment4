@@ -3,66 +3,73 @@
   margin: 0;
   box-sizing: border-box;
 }
-/* @font-face {
-    font-family:"poppins";
-    src: url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css);
-    font-family: 'poppins',sans-serif;
-    font-size:xx-small; 
-} */
+@font-face {
+  font-family: "poppins";
+  src: url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css);
+  font-family: "poppins", sans-serif;
+  font-size: xx-small;
+}
 body {
   background-color: #9633ff;
-  padding: 400px 100px;
+  padding-top: 50px;
 }
 section {
   background-color: white;
-  padding: 50px;
   border-radius: 5px;
   margin: auto;
-  display: grid;
-  width: 30%;
+  display: block;
+ width:max-content;
+  padding: 4rem;
 }
 h1 {
   text-align: center;
-  margin-bottom: 30px;
+  padding: 0px 0px 20px 0px;
 }
+
+.username-container {
+  position: relative;
+}
+
 input {
-  padding-left: 30px;
-  padding-top: 5px;
-  padding-bottom: 5px;
-  margin-bottom: 10px;
-}
-.input-icon .fa-solid {
-  position: absolute;
-  padding: 6px;
-}
-input[type="text"] {
-  width: 100%;
-}
-input[type="password"] {
-  width: 100%;
-}
-i {
-  color: rgb(0, 0, 0);
-}
-input[type="button"] {
-  width: fit-content;
-  display: flex;
-  margin: auto;
-  padding: 4px 30px;
+  width: 104%;
+  padding: 10px;
+  padding-left: 40px;
   border-radius: 5px;
-  background-color: #9633ff;
-  color: white;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
+  outline: none;
 }
-a {
-  text-decoration: none;
-  color: #9633ff;
+.fa-user,
+.fa-envelope,
+.fa-lock {
+  position: absolute;
+  top: 10px;
+  left: 10px;
 }
-.Signme {
-  color: black;
+input::placeholder {
+  font-size: 12px;
 }
-p {
-  margin-bottom: 10px;
-  text-align: center;
-  font-size: 15px;
+.Terms{
+  font-size: 14px;
+  padding-bottom: 5px;
+}
+button{
+  display: block;
+  margin: auto;
+  width: 100%;
+  background-color: blueviolet;
+  color: beige;
+  border-radius: 10px;
+  padding: 10px;
+}
+.Signin{
+   font-size: 14px;
+  padding-top:10px;
+}
+
+input:hover {
+  border-color: #007bff; /* Change to blue when hovered */
+}
+input:focus {
+  border-color: #007bff; 
+  background-color: #eaffea; /* Light green background */
 }
