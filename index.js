@@ -1,5 +1,7 @@
 document.addEventListener("DOMContentLoaded", function () {
+  console.log("Script loaded");
   if (window.location.pathname.includes("index.html")) {
+     console.log("On index.html");
     document
       .getElementById("registerForm")
       .addEventListener("submit", function (event) {
