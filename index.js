@@ -1,7 +1,5 @@
 if (window.location.pathname.includes("index.html")) {
-  document
-    .getElementById("registerForm")
-    .addEventListener("submit", function (event) {
+  document.getElementById("registerForm").addEventListener("submit", function (event) {
       event.preventDefault();
       const username = document.getElementById("username").value.trim();
       const email = document.getElementById("email").value.trim();
